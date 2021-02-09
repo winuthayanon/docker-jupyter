@@ -17,5 +17,7 @@ vi docker-compose.yml
 # Start
 docker-compose up -d
 
+# Go to https://jupyter.domain.com
+
 # Stop
 docker-compose down
