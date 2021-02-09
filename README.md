@@ -17,7 +17,7 @@ vi docker-compose.yml
 # Start
 docker-compose up -d
 
-# Go to https://jupyter.domain.com
+Go to https://jupyter.domain.com
 Default
 User=scrna
 Pass=Pass4scrna
