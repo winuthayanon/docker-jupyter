@@ -18,6 +18,8 @@ vi docker-compose.yml
 docker-compose up -d
 
 # Go to https://jupyter.domain.com
+User=scrna
+Pass=Pass4scrna
 
 # Stop
 docker-compose down
