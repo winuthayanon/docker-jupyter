@@ -18,8 +18,12 @@ vi docker-compose.yml
 docker-compose up -d
 
 # Go to https://jupyter.domain.com
+Default
 User=scrna
 Pass=Pass4scrna
+
+# After login you can change password by open the Terminal and type command
+passwd
 
 # Stop
 docker-compose down
