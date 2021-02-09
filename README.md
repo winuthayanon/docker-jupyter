@@ -22,7 +22,8 @@ Default
 User=scrna
 Pass=Pass4scrna
 
-# After login you can change password by open the Terminal and type command
+After login you can change password by open the Terminal and type command
+
 passwd
 
 # Stop
