@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+   jupyterhub-app:
+     container_name: jupyter
+     image: winuthayanon/hub_v2-1000
+     restart: unless-stopped
+     expose:
+       - "8000"
+     volumes:
+       - "$HOME/Docker/docker-jupyter:/home/scrna/data" 
+       - "/media:/home/scrna/data/media"
+     environment:
+       - VIRTUAL_HOST=jupyter.domain.com
+       - LETSENCRYPT_HOST=jupyter.domain.com
+       - LETSENCRYPT_EMAIL=jupyter@domain.com
+       - VIRTUAL_NETWORK=webproxy
+       - VIRTUAL_PORT=8000
+
+networks:
+    default:
+       external:
+         name: webproxy
